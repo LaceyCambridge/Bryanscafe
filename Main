@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bryan's Café</title>
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', () => {
+      const footerText = document.querySelector('.footer-text');
+      footerText.innerHTML = `&copy; ${currentYear} Bryan's Café`;
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="about.html">My Cafe</a>
+      </div>
+      <ul class="navigation">
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="banner">
+        <img src="banner.jpg" alt="Banner Image">
+      </div>
+      <div class="about-section">
+        <h2>About</h2>
+        <p>About section description</p>
+        <img src="about.jpg" alt="About Image">
+      </div>
+      <div class="history-section">
+        <h2>History</h2>
+        <p>History section description</p>
+        <img src="history.jpg" alt="History Image">
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <div class="meals">
+        <h3>Meals</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Beetroot and feta salad</td>
+              <td>$15.00</td>
+              <td>Suitable for vegetarians, made with fresh beetroot</td>
+              <td><img src="beetroot-salad.jpg" alt="Beetroot and feta salad"></td>
+            </tr>
+            <tr>
+              <td>Sourdough Rye Sandwich</td>
+              <td>$18.00</td>
+              <td>Cheese and salad sandwich made with organic, sourdough rye bread</td>
+              <td><img src="sandwich.jpg" alt="Sourdough Rye Sandwich"></td>
+            </tr>
+            <tr>
+              <td>Spinach Pie and Salad</td>
+              <td>$20.00</td>
+              <td>Tasty pie with salad</td>
+              <td><img src="spinach-pie.jpg" alt="Spinach Pie and Salad"></td>
+            </tr>
+            <tr>
+              <td>Feta pancakes with salad</td>
+              <td>$19.50</td>
+              <td>Tasty pancake filled with feta and salad</td>
+              <td><img src="pancakes.jpg" alt="Feta pancakes with salad"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="beverages">
+        <h3>Beverages</h3>
+        <h4>Coffee and hot chocolates</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Sizes</th>
+              <th>Price</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Small</td>
+              <td>$3.50</td>
+              <td>For coffee, please inform the staff of the coffee type.</td>
+            </tr>
+            <tr>
+              <td>Regular</td>
+              <td>$4.00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Large</td>
+              <td>$4.50</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="beverages">
+        <h4>Other beverages</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Soda</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Fresh juice</td>
+              <td>$6.00</td>
+            </tr>
+            <tr>
+              <td>Bottled water</td>
+              <td>$2.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="enquiry-form" action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Message Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message Body:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+      <div class="branches">
+        <h3>Branches</h3>
+        <ul>
+          <li>
+            <p>76 Devonshire St, Surry Hills NSW</p>
+            <p>Contact: 02 9211 1234</p>
+            <p>Opening Hours: Mon - Fri: 6:00 to 14:30, Sat-Sun: 7:00 to 15:00</p>
+            <a href="https://maps.google.com/maps?q=76+Devonshire+St%2C+Surry+Hills+NSW" target="_blank">Google Maps</a>
+          </li>
+          <li>
+            <p>451 Pitt St, Haymarket Sydney, NSW</p>
+            <p>Contact: 02 9262 5678</p>
+            <p>Opening Hours: Mon - Fri: 6:00 to 16:00, Sat-Sun: 7:00 to 15:00</p>
+            <a href="https://maps.google.com/maps?q=451+Pitt+St%2C+Haymarket+Sydney+NSW" target="_blank">Google Maps</a>
+          </li>
+          <li>
+            <p>31 Alfred Street, Circular Quay, NSW</p>
+            <p>Contact: 02 8971 9101</p>
+            <p>Opening Hours: Mon - Fri: 6:00 to 16:00, Sat-Sun: 7:00 to 15:00</p>
+            <a href="https://maps.google.com/maps?q=31+Alfred+Street%2C+Circular+Quay+NSW" target="_blank">Google Maps</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-text"></p>
+    <a href="privacy.html" target="_blank">Privacy Policy</a>
+  </footer>
+</body>
+</html>
